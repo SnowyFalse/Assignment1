@@ -12,7 +12,22 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body class="background">
+    <div class="leaderboard">
+      <h3 class="heading">Leaderboard</h5>
+      <table class="tableStyle">
+        <tr>
+          <th>🤿 Benni </th><th class="score">223 <span class="purple">(purple character)</span></th>
+        </tr>
+        <tr>
+          <th>🐱 Günther </th><th class="score">201 <span class="purple">(purple character)</span</th>
+        </tr>
+        <tr>
+          <th>🐒 Tom </th><th class="score">100 <span class="blue">(blue character)</span></th>
+        </tr>
+      </table>
+      <p class="name"></p> <p class="score"></p>
+    </div>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
